@@ -3,12 +3,12 @@ name = "nexr"
 authors = [
     { name = "elius mgani", email = "eliasmgani@gmail.com"}
 ]
-description = "MCP Development Assistant for Frappe"
+description = "MCP Development and Assistant Tool for Frappe based apps"
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]
 dependencies = [
-    # "frappe~=15.0.0" # Installed and managed by bench.
+    "frappe-mcp>=0.1.0",  # Official Frappe MCP library (auto-installed with app)
 ]
 
 [build-system]
