@@ -8,7 +8,7 @@ requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]
 dependencies = [
-    "frappe-mcp>=0.1.0",  # Official Frappe MCP library (auto-installed with app)
+    "frappe-mcp>=0.1.0",
 ]
 
 [build-system]
