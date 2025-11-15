@@ -6,37 +6,10 @@ app_email = "eliasmgani@gmail.com"
 app_license = "mit"
 app_version = "1.0.0"
 
-# MCP Server Configuration
-# -------------------------
-# Nexr provides a Model Context Protocol (MCP) server for AI-assisted development.
-# 
-# Endpoint: /api/method/nexr.mcp.handle_mcp
-# 
-# Available MCP Tools:
-# - create_doctype: Create DocTypes with file generation for any app
-# - get_doctype_schema: Retrieve DocType metadata and fields
-# - get_all_doctypes: List all DocTypes filtered by app
-# - create_document: Create documents in any DocType
-# - get_document: Retrieve single document by name
-# - get_documents: Query documents with filtering and sorting
-# - update_document: Update existing documents
-# - delete_document: Delete documents
-# - get_field_options: Get options for Link/Select fields
-# - get_installed_apps: List installed apps with versions
-# - run_bench_command: Execute whitelisted bench commands
-# - health_check: Check server and site status
-# 
-# Authentication: Frappe API Key/Secret
-# Transport: Streamable HTTP (MCP over HTTP)
-# Version Support: Frappe v14, v15, v16+
-# 
-# For setup instructions, see: https://github.com/av-dev2/nexr
 
 # Apps
 # ------------------
 
-# Frappe is required and will be automatically installed if not present on the site
-required_apps = ["frappe"]
 
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
