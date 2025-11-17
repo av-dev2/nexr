@@ -661,8 +661,18 @@ def get_doctype_schema(doctype: str, with_permissions: bool = True) -> Dict[str,
 				"fields": fields,
 				"links": [
 					{
-						"link_doctype": link.link_doctype,
-						"link_fieldname": link.link_fieldname
+						"link_doctype": link.options,
+						"link_fieldname": link.fieldname,
+						"label": link.label,
+						"fieldtype": link.fieldtype,
+						"reqd": bool(link.reqd),
+						"read_only": bool(link.read_only),
+						"hidden": bool(link.hidden),
+						"description": link.description,
+						"search_indexed": bool(link.search_indexed),
+						"in_list_view": bool(link.in_list_view),
+						"in_standard_filter": bool(link.in_standard_filter),
+						"fetch_from": link.fetch_from
 					}
 					for link in meta.get_link_fields()
 				]
