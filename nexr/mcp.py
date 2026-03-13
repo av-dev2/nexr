@@ -747,7 +747,7 @@ def get_all_doctypes(app_name: Optional[str] = None, include_child: bool = False
 		
 		# Add app name to each doctype
 		for dt in doctypes:
-			dt["app"] = frappe.local.module_app.get(frappe.scrub(dt.get("module")))
+			dt["app"] = frappe.scrub(dt.get("module"))
 			dt["is_child"] = bool(dt.get("istable"))
 			dt.pop("istable", None)
 		
